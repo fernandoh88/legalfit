@@ -1,0 +1,25 @@
+{
+  "name": "legalfit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "LegalFit MVP for fictional BC lawyer discovery.",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:client": "npm run dev -w client",
+    "dev:server": "npm run dev -w server",
+    "build": "npm run build --workspaces",
+    "start": "node server/dist/index.js",
+    "typecheck": "npm run typecheck --workspaces",
+    "test": "npm run test -w server"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  }
+}

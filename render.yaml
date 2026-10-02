@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: legalfit-demo
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: LEGAL_CLASSIFIER
+        value: mock
+      - key: TRUST_PROXY_HOPS
+        value: "1"
+      - key: RATE_LIMIT_MAX
+        value: "20"
