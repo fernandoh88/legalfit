@@ -1,5 +1,9 @@
 # LegalFit
 
+[Live Demo](https://legalfit-demo.onrender.com) | [GitHub](https://github.com/fernandoh88/legalfit) | [CI Checks](https://github.com/fernandoh88/legalfit/actions/workflows/ci.yml)
+
+The live portfolio demo runs on Render's Free plan using mock classification. All lawyers and cases are fictional; use fictional descriptions when trying it. The service may take about a minute to wake after inactivity. See [Render's free-service limits](https://render.com/docs/free).
+
 LegalFit is a full-stack portfolio project for Canadian lawyer discovery. It helps people describe a legal problem and discover fictional British Columbia lawyers whose demo experience appears relevant.
 
 LegalFit does not provide legal advice, does not assess whether a person has a valid legal claim, does not calculate lawyer win rates, and does not predict case outcomes.
